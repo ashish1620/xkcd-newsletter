@@ -1,0 +1,60 @@
+body {
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    border: 0.3px solid lightgray;
+    border-radius: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    color: #2196f3;
+    font-weight: bold;
+}
+
+.sub-title {
+    color: #424242;
+    font-weight: normal;
+}
+
+.button {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 28px;
+    background-color: #2196f3;
+    color: white;
+}
+
+.button:hover {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #2196f3;
+}
+
+.input-box {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.error {
+    color: red;
+}
