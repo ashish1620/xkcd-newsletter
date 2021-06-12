@@ -100,13 +100,13 @@ function send_mail_with_comic($email, $comic)
             <small>
             To make sure you keep getting these emails,
              please add xkcd.newsletter.com to your address book or whitelist us.
-             </br> Want out of the loop? <a href="/unsubscribe.php" >Unsubscribe </a>
+             </br> Want out of the loop? <a href="https://531723dcaf1a92.localhost.run/unsubscribe.php" >Unsubscribe </a>
             </small>
         </div>
     </body>
 
     </html>
-    ', $comic);
+    ', $comic, $email);
 
     mail($to, $subject, $message, $header);
 }
