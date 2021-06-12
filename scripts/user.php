@@ -37,6 +37,30 @@ function create_user($email)
     return 200;
 }
 
+function delete_user($email)
+{
+    $conn = get_connection();
+
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        return 501;
+    }
+
+    $query = "DELETE FROM user WHERE email = ?";
+    if ($stmt = $conn->prepare($query)) {
+
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $stmt->close();
+        
+    } else {
+        return 500;
+    }
+
+    $conn->close();
+    return 200;
+}
+
 function gen_token()
 {
     $TOKEN_MIN = 24564;
